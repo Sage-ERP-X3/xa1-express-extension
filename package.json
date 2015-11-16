@@ -1,0 +1,31 @@
+{
+  "name": "xa1-express-extension",
+  "description": "Demo of sage x3 http extension hooks",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Sage X3 platform team"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sage-ERP-X3/xa1-express-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sage-ERP-X3/xa1-express-extension/issues"
+  },
+  "engines": {
+    "node": ">=0.10.8"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "sage": {
+    "x3": {
+      "extensions": {
+        "http": [{
+          "module": "xa1-express-extension/lib/app"
+        }]
+      }
+    }
+  }
+}
